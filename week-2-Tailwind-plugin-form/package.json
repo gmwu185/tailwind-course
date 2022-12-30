@@ -1,5 +1,15 @@
 {
+  "name": "week-2-tailwind-plugin-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
