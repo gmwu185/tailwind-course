@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 擴充專案的全站樣式 */
 @layer base {
-  html {
+
+  /* 自定樣式屬性 */
+  /* html {
     font-weight: 500;
+  } */
+
+  /* 引用 Tailwind 自定樣式 */
+  html {
+    @apply font-medium;
   }
 }

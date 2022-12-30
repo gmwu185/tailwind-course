@@ -419,6 +419,14 @@ video {
   display: none;
 }
 
+/* 自定樣式屬性 */
+
+/* html {
+    font-weight: 500;
+  } */
+
+/* 引用 Tailwind 自定樣式 */
+
 html {
   font-weight: 500;
 }
@@ -599,3 +607,5 @@ html {
 .underline {
   text-decoration-line: underline;
 }
+
+/* 擴充專案的全站樣式 */
