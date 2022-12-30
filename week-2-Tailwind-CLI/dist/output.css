@@ -525,6 +525,12 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.btn {
+  background-color: blue;
+  padding: 12px 6px;
+  color: white;
+}
+
 .relative {
   position: relative;
 }
@@ -644,15 +650,13 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.filter-none {
-  filter: none;
-}
-
 .u-filter-none {
   filter: none;
 }
 
 /* 擴充專案的全站樣式 */
+
+/*自組元件*/
 
 /* 自組樣式 */
 

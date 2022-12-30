@@ -16,6 +16,15 @@
   }
 }
 
+/*自組元件*/
+@layer components {
+  .btn {
+    background-color: blue;
+    padding: 12px 6px;
+    color: white;
+  }
+}
+
 /* 自組樣式 */
 @layer utilities{
   .u-filter-none {
