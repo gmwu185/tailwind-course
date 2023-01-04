@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              tahiti: {
+                100: '#cffafe',
+                200: '#a5f3fc',
+                300: '#67e8f9',
+                400: '#22d3ee',
+                500: '#06b6d4',
+                600: '#0891b2',
+                700: '#0e7490',
+                800: '#155e75',
+                900: '#164e63',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .c-btn {
+          @apply py-2 px-5 m-1 rounded-md focus:ring-2 focus:ring-offset-2 focus:outline-none  flex items-center;
+        }
+        .c-btn-primary {
+          @apply text-white bg-tahiti-500 rounded-md hover:bg-tahiti-400 focus:ring-tahiti-200 disabled:bg-tahiti-400;
+        }
+        .c-btn-primaryLight {
+          @apply text-tahiti-500 bg-tahiti-100 rounded-md hover:bg-tahiti-200 focus:ring-tahiti-200 disabled:bg-tahiti-800 disabled:text-tahiti-500 disabled:opacity-75;
+        }
+        .c-btn-sm {
+          @apply text-sm py-1 px-3;
+        }
+        .c-btn-lg {
+          @apply text-3xl py-3 px-7;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex-wrap items-start items-center">
+      <button class="c-btn c-btn-primary">button basic</button>
+      <button class="c-btn c-btn-primaryLight">button basic</button>
+      <button class="c-btn c-btn-primary">
+        <svg class="" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path
+            d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z"
+          />
+        </svg>
+        <span class="">New</span>
+      </button>
+      <hr class="w-full my-2" />
+      <button class="c-btn c-btn-primary c-btn-sm">button sm</button>
+      <button class="c-btn c-btn-primary">button basic</button>
+      <button class="c-btn c-btn-primary c-btn-lg">button lg</button>
+      <hr class="w-full my-2" />
+      <button class="c-btn c-btn-primary rounded-full">button basic</button>
+    </div>
+  </body>
+</html>

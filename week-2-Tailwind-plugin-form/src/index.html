@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind forms</title>
+    <link href=".././dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-primary-light">
+      <div class="max-w-xl mx-auto px-14 py-16 md:max-w-4xl">
+        <h1 class="text-5xl text-center leading-normal font-bold mb-6">聯絡我們</h1>
+        <p class="mb-5 text-xl">
+          我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+        </p>
+        <div class="grid gap-y-4 gap-x-0">
+          <label class="block">
+            <span class="">姓名</span>
+            <input
+              type="text"
+              class="mt-1 block w-full bg-transparent border-black focus:border-primary-dark focus:ring-primary-dark focus:ring-opacity-30 placeholder:text-stone-400"
+              placeholder="陳小明"
+            />
+          </label>
+          <label class="block">
+            <span class="">聯絡電話</span>
+            <input
+              type="text"
+              class="mt-1 block w-full bg-transparent border-black focus:border-primary-dark focus:ring-primary-dark focus:ring-opacity-30 placeholder:text-stone-400"
+              placeholder="0912-345-678"
+            />
+          </label>
+          <label class="block">
+            <span class="">電子郵件</span>
+            <input
+              type="email"
+              class="mt-1 block w-full bg-transparent border-black focus:border-primary-dark focus:ring-primary-dark focus:ring-opacity-30 placeholder:text-stone-400"
+              placeholder="example@email.com"
+            />
+          </label>
+          <label class="block">
+            <span class="">意見反應</span>
+            <textarea
+              class="mt-1 block w-full bg-transparent border-black focus:border-primary-dark focus:ring-primary-dark focus:ring-opacity-30 placeholder:text-stone-400"
+              rows="3"
+              placeholder="請輸入您的意見"
+            ></textarea>
+          </label>
+          <div class="block mb-6">
+            <label class="inline-flex items-center">
+              <input
+                class="border-black border-2 bg-transparent text-primary focus:border-primary-dark focus:ring-primary"
+                type="checkbox"
+              />
+              <span class="ml-2">
+                我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+              </span>
+            </label>
+          </div>
+          <div class="text-center mb-7">
+            <button
+              type="button"
+              class="rounded-none bg-primary focus:outline-none focus-visible:ring focus-visible:ring-primary-dark text-white font-bold px-14 py-4"
+            >
+              確認送出
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

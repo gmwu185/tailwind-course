@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 擴充專案的全站樣式 */
+@layer base {
+
+  /* 自定樣式屬性 */
+  /* html {
+    font-weight: 500;
+  } */
+
+  /* 引用 Tailwind 自定樣式 */
+  html {
+    @apply font-medium;
+  }
+}
+
+/*自組元件*/
+@layer components {
+  .btn {
+    background-color: blue;
+    padding: 12px 6px;
+    color: white;
+  }
+}
+
+/* 自組樣式 */
+@layer utilities{
+  .u-filter-none {
+    filter: none;
+  }
+}
