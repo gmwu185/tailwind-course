@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: '12px',
+          },
+          extend: {
+            colors: {
+              maroon: {
+                light: '#FBF2F2',
+                DEFAULT: '#AA0601',
+                dark: '#650300',
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="bg-maroon text-white sm:py-8">
+      <div
+        class="container sm:flex sm:flex-wrap sm:justify-between sm:items-center px-0 md:px-3"
+      >
+        <a href="#" class="py-2 block">
+          <img
+            class="w-12 h-[30px] mx-auto sm:w-[80px] sm:h-12"
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true"
+            alt=""
+          />
+        </a>
+        <ul class="flex flex-wrap">
+          <li
+            class="border border-white sm:border-0 w-1/2 sm:w-auto text-center"
+          >
+            <a class="text-xl md:py2.5 sm:px-5" href="#">系列鏡框</a>
+          </li>
+          <li
+            class="border border-white sm:border-0 w-1/2 sm:w-auto text-center"
+          >
+            <a class="text-xl md:py2.5 sm:px-5" href="#">門市據點</a>
+          </li>
+          <li
+            class="border border-white sm:border-0 w-1/2 sm:w-auto text-center"
+          >
+            <a class="text-xl md:py2.5 sm:px-5" href="#">部落格</a>
+          </li>
+          <li
+            class="border border-white sm:border-0 w-1/2 sm:w-auto text-center"
+          >
+            <a class="text-xl md:py2.5 sm:px-5" href="#">常見問題</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
