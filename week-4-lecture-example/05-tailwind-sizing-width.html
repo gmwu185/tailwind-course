@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: '12px',
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-xl mb-3">基本二等分排版</h2>
+      <div class="flex flex-wrap">
+        <div class="w-1/2 bg-gray-200 h-80">1</div>
+        <div class="w-1/2 bg-gray-200 h-80">2</div>
+      </div>
+      <hr class="my-4" />
+      <h2 class="text-xl mb-3">基本配合各斷點切換等分排版</h2>
+      <div class="md:flex md:flex-wrap">
+        <div class="md:w-1/2 lg:w-1/4 bg-gray-200 h-80">1</div>
+        <div class="md:w-1/2 lg:w-1/4 bg-gray-200 h-80">2</div>
+        <div class="md:w-1/2 lg:w-1/4 bg-gray-200 h-80">3</div>
+        <div class="md:w-1/2 lg:w-1/4 bg-gray-200 h-80">4</div>
+      </div>
+      <hr class="my-4" />
+      <h2 class="text-xl mb-3">每個內層都使用 px-3，外容器使用 -12 margin</h2>
+      <div class="flex flex-wrap -mx-3">
+        <div class="px-3 md:w-1/2 lg:w-1/4">
+          <img
+            class=""
+            src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          />
+          <div class="">
+            <p class="">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <small>9 mins</small>
+            <button class="">點我</button>
+          </div>
+        </div>
+        <div class="px-3 md:w-1/2 lg:w-1/4">
+          <img
+            class=""
+            src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          />
+          <div class="">
+            <p class="">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <small>9 mins</small>
+            <button class="">點我</button>
+          </div>
+        </div>
+        <div class="px-3 md:w-1/2 lg:w-1/4">
+          <img
+            class=""
+            src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          />
+          <div class="">
+            <p class="">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <small>9 mins</small>
+            <button class="">點我</button>
+          </div>
+        </div>
+        <div class="px-3 md:w-1/2 lg:w-1/4">
+          <img
+            class=""
+            src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          />
+          <div class="">
+            <p class="">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <small>9 mins</small>
+            <button class="">點我</button>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4" />
+      <h2 class="text-xl mb-3">使用 Grid 寫法，在外層下 class 名稱</h2>
+      <div class="grid md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+        <div class="bg-gray-200 h-80">1</div>
+        <div class="bg-gray-200 h-80">2</div>
+        <div class="bg-gray-200 h-80">3</div>
+        <div class="bg-gray-200 h-80">4</div>
+      </div>
+    </div>
+  </body>
+</html>
